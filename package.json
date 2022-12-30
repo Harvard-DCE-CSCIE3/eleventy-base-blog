@@ -8,8 +8,10 @@
     "watch": "npx @11ty/eleventy --watch",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* npx @11ty/eleventy"
+    "debug": "DEBUG=* npx @11ty/eleventy",
+    "deploy": "gh-pages -d _site"
   },
+  "homepage": "/eleventy-base-blog",
   "repository": {
     "type": "git",
     "url": "git://github.com/11ty/eleventy-base-blog.git"
@@ -23,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/11ty/eleventy-base-blog/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-navigation": "^0.3.3",
@@ -32,5 +33,8 @@
     "luxon": "^2.4.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

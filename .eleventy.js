@@ -120,7 +120,7 @@ module.exports = function(eleventyConfig) {
     // You can also pass this in on the command line using `--pathprefix`
 
     // Optional (default is shown)
-    pathPrefix: "/",
+    pathPrefix: "/eleventy-base-blog/",
     // -----------------------------------------------------------------
 
     // These are all optional (defaults are shown):
@@ -128,7 +128,8 @@ module.exports = function(eleventyConfig) {
       input: ".",
       includes: "_includes",
       data: "_data",
-      output: "_site"
+      //output: "_site"
+      output: "docs" // try this to see what happens if we build to docs and publish Pages on this path
     }
   };
 };
